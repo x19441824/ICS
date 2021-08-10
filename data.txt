@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang=“en”>
+
+<head> 
+	<link rel="stylesheet" href="Wfg.css"> <! Link to stylesheet so the webpage has its customisation>
+	
+	<! Javascript that handles the form at the end of the webpage>
+	<script>  
+	function validateForm() { 
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false; // Validation for the name Variable. This ensures that the User must enter their name.
+  }
+   let y = document.forms["myForm"]["PhoneNumber"].value;
+  if (y == "") {
+    alert("Phone Number must be filled out");
+    return false;// Validation fro Phone Number Variable.
+  }
+  let z = document.forms["myForm"]["Email"].value;
+  if (z == "") {
+    alert("Email must be filled out");
+    return false;// Validation for email Variable.
+  }
+  let a = document.forms["myForm"]["Message"].value;
+  if (a == "") {
+    alert("Message must be filled out");
+    return false;// Validation for Message variable Variable.
+  }
+}
+</script>
+
+<title> ICS Mental Health</title> <!title of the tab>
+<link rel="icon" href="favicon1.ico"><! Icon i added for the Website>
+
+</head>
+
+
+
+<body>
+<div id="City"> <! first div which will be the header of the website>
+   <img class="logo" src="index.png" alt="Logo"> <! Logo for the website>
+	<div class="dropdown"> <! first of 3 boxes for the header All are dropdowns that link to different parts of this website or to other websites. This is my navigation for the website>
+			<button class="dropbtn">This website </button>
+			<div class="dropdown-content">
+				<a href="#">Intro</a><! links to each section of the website for easy access>
+				<a href="#vid1">Video</a>
+				<a href="#gallery"> Gallery</a>
+				<a href="#form1">Form</a>
+			</div>
+			
+	</div>
+	<div class="dropdown">
+			<button class="dropbtn"> Other resources</button>
+			<div class="dropdown-content"><! recources that people visiting the website may need to use if their mental health isnt good>
+				<a href="https://www.mentalhealthireland.ie/"	target=”_blank”	>Mental Health Ireland</a>
+				<a href="https://www.pieta.ie/"	target=”_blank” >Pieta House</a>
+				<a href="https://www.mentalhealthireland.ie/need-help-now/"	target=”_blank”	>Urgent help</a>
+			</div>
+			
+	</div>
+	
+	<div class="dropdown">
+			<button class="dropbtn">Donate</button>
+		
+			<div class="dropdown-content"> <!Link to donate to the ICS. I put this in as it is close to home after my fight>
+				<a href="https://www.cancer.ie/ways-to-help/donate/donate	"target=”_blank”	>Donate to ICS</a>
+			</div>
+			
+	</div>
+</div>
+ <div class= "main">
+	<div class="stupid">
+	<h1>Intro</h1> <! this is the introduction to the website. From this introduction everything That was required and more can be seen. An image, The navigation, The logo of the site, the title along with an Icon and a paragraph describing the website to those who arrive on it.>
+	<! Introduction Paragraph>
+	<p class="maintxt"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec dui. Neque aliquam vestibulum morbi blandit cursus. Vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. Aliquam faucibus purus in massa. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Aliquet nec ullamcorper sit amet risus nullam. Eros donec ac odio tempor. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere. Laoreet sit amet cursus sit. Congue mauris rhoncus aenean vel. Varius vel pharetra vel turpis nunc eget lorem dolor. Nulla aliquet enim tortor at auctor. Feugiat scelerisque varius morbi enim nunc. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Cursus mattis molestie a iaculis at. Vitae ultricies leo integer malesuada nunc vel risus commodo. Hac habitasse platea dictumst quisque. Lobortis mattis aliquam faucibus purus in massa tempor. Felis bibendum ut tristique et egestas quis. 
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Id semper risus in hendrerit. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Scelerisque felis imperdiet proin fermentum leo. Dictum sit amet justo donec enim diam vulputate. Egestas sed tempus urna et pharetra pharetra massa massa. Leo vel fringilla est ullamcorper eget. Urna cursus eget nunc scelerisque viverra mauris in aliquam. Maecenas pharetra convallis posuere morbi leo. Aliquam purus sit amet luctus venenatis lectus.</p>
+	</div>
+	<img class="happyimg" src="happy.jpg" alt="grill"><! first image required>
+  
+  
+  <div id="vid1"> <! This is my 4th required section. I decided to go with a Video describing hwo important it is to talk about mental health>
+   
+  <video Width="1280" height="720"  controls>
+  <source src="Vid.mp4" type="video/mp4">
+  
+  </video>
+  <p Id="vidP"> Play</p>
+  <script>
+document.getElementById("vidP").style.color = "blue";//Required manipulation of dom in my original part of the page.
+</script>
+  </div>
+  
+  <H2> Gallery for good mental health</H2>
+  
+  <div id="gallery"> <! this is the gallery that was required and it has the show/hide functionality that was required. I found a work around for a problem i had before submitting. I hid the text behind the images so when they dissapear the description shows.>
+  
+	<div class="galleryimg">
+	<img id="N1" src="g1.jpg" alt="n1">
+	<p id="text1" >fhndhfn</p>
+	
+	</div> 
+	<button id="btn" onclick="showHide()">Show Activity</button>
+	
+	<div class="galleryimg"> <! each of the Gallery Images uses the same type of function for the show/hide feature>
+	<img id="N2" src="g2.jpg" alt="n2">
+	</div>
+	
+	<button id="btn2" onclick="showHide2()">Show Activity</button>
+	
+	<div class="galleryimg">
+	<img id="N3" src="g3.jpg" alt="n3">
+	</div>
+
+<button id="btn3" onclick="showHide3()">Show Activity</button>
+	
+	<div class="galleryimg">
+	<img id="N4" src="g4.jpg" alt="n4">
+	</div>
+
+<button id="btn4" onclick="showHide4()">Show Activity</button>
+	
+	<div class="galleryimg">
+	<img id="N5" src="g5.jpg" alt="n5">
+	</div>
+
+<button id="btn5" onclick="showHide5()">Show Activity</button>
+	
+	<div class="galleryimg">
+	<img id="N6" src="g6.jpg" alt="n6">
+	</div>
+
+<button id="btn6" onclick="showHide6()">Show Activity</button>
+	
+	</div>
+	</div>
+<div id="form1"> <! this is the form that was required of the Website. Each Input has its own validation to ensure the user fills every field.>
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <br><input type="text" name="fname"><br>
+   <label for="Number"> Phone number: </label> <br>
+	<input type="Int" id="Number" name="PhoneNumber" value=""><br> 
+	<label for="Email">Email Address:</label> <br>
+	<input type="text"id="email"name="Email"value=""><br>
+	<label for="Message"> Message of how you feel:</label> <br>
+	<input type="text" id="Message" name="Message" value=""><br> <br>
+	
+  <input type="submit" value="Submit">
+</form>
+	
+	</div>
+	
+<div class="bottom">
+	  <p id="annoying"> Copyright 2021</p> <! this is the footer of the page it also Stays fixed the entire time.>
+	  </div>
+	  
+	  <script>
+function showHide() {
+  var x = document.getElementById("N1");
+  if (x.style.display === "none") {
+    x.style.display = "block";} 
+	else {
+    x.style.display = "none";}
+}
+
+function showHide2() {
+  var x = document.getElementById("N2");
+  if (x.style.display === "none") {
+    x.style.display = "block";} 
+	else {
+    x.style.display = "none";}
+}
+
+function showHide3() {
+  var x = document.getElementById("N3");
+  if (x.style.display === "none") {
+    x.style.display = "block";} 
+	else {
+    x.style.display = "none";}
+}
+
+function showHide4() {
+  var x = document.getElementById("N4");
+  if (x.style.display === "none") {
+    x.style.display = "block";} 
+	else {
+    x.style.display = "none";}
+}
+function showHide5() {
+  var x = document.getElementById("N5");
+  if (x.style.display === "none") {
+    x.style.display = "block";} 
+	else {
+    x.style.display = "none";}
+}
+
+function showHide6() {
+  var x = document.getElementById("N6");
+  if (x.style.display === "none") {
+    x.style.display = "block";} 
+	else {
+    x.style.display = "none";}
+}
+</script>
+	  
+</body>
+</html>
